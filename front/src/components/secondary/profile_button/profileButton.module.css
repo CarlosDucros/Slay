@@ -1,0 +1,21 @@
+.navbar_profile {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  position: relative;
+  &:hover .login {
+    display: block;
+  }
+}
+.login {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 40%);
+  background-color: white;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  z-index: 1;
+}

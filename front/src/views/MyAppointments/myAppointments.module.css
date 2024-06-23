@@ -1,0 +1,11 @@
+.appointments {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.appointmentsGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+}

@@ -1,0 +1,51 @@
+.navbar {
+  margin: 20px;
+}
+
+.navbar_buttons {
+  display: flex;
+  margin: 0.5rem;
+}
+.navbar_profile {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  position: relative;
+  &:hover .login {
+    display: block;
+  }
+}
+.login {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 40%);
+  background-color: white;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  z-index: 1;
+}
+
+.navbar_button {
+  margin-left: 1rem;
+  padding: 0.8rem;
+  color: #594a4e;
+  position: relative;
+  transition: color 0.3s;
+  height: 2.5rem;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ff8ba7;
+    transition: width 0.3s;
+  }
+  &:hover::after {
+    width: 100%;
+  }
+}

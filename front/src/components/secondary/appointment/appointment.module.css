@@ -1,0 +1,29 @@
+.appointment {
+  width: 10rem;
+  height: 13rem;
+  margin: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0.2rem solid #1a1718c5;
+  border-radius: 0.3rem;
+}
+
+.accepted {
+  background-color: hsl(359, 100%, 89%);
+
+  & button {
+    background-color: rgb(230, 35, 61);
+    padding: 0.2rem;
+    border-radius: 0.4rem;
+    &:hover {
+      background-color: rgba(245, 59, 84, 0.8);
+      transition: 0.3s;
+    }
+  }
+}
+
+.cancelled {
+  background-color: rgba(255, 0, 0, 0.61);
+}

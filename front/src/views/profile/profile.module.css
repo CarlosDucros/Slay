@@ -1,0 +1,17 @@
+.signOut {
+  display: block;
+  background-color: rgb(182, 29, 29);
+  color: white;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.2rem;
+}
+
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0.5rem;
+}

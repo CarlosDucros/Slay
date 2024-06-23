@@ -1,0 +1,22 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.DB_PORT = exports.DB_USERNAME = exports.DB_NAME = exports.DB_PASS = exports.HOST = exports.PROTO = exports.PORT = void 0;
+var dotenv_1 = __importDefault(require("dotenv"));
+dotenv_1.default.config({ path: "./src/config/.env" });
+var PORT = Number(process.env.PORT) || 3000;
+exports.PORT = PORT;
+var PROTO = process.env.PROTO || "http";
+exports.PROTO = PROTO;
+var HOST = process.env.HOST || "localhost";
+exports.HOST = HOST;
+var DB_PORT = Number(process.env.DB_PORT) || 5432;
+exports.DB_PORT = DB_PORT;
+var DB_USERNAME = process.env.DB_USERNAME || "test";
+exports.DB_USERNAME = DB_USERNAME;
+var DB_PASS = process.env.DB_PASS || "test";
+exports.DB_PASS = DB_PASS;
+var DB_NAME = process.env.DB_NAME || "test";
+exports.DB_NAME = DB_NAME;

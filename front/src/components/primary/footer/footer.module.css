@@ -1,0 +1,30 @@
+.footer {
+  background-color: #faeee7;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0.5rem auto;
+  & img {
+    height: 3rem;
+    margin: 0.5rem 0.5rem;
+    cursor: pointer;
+  }
+}
+
+.linkedin {
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.35));
+  transition: filter 0.3s ease-in-out;
+  &:hover {
+    filter: drop-shadow(2px 2px 5px #422424c5);
+  }
+}
+
+.github {
+  clip-path: circle(50% at 50% 50%);
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.35));
+  transition: filter 0.3s ease-in-out;
+  &:hover {
+    filter: drop-shadow(10px 10px 10px #422424c5);
+  }
+}
